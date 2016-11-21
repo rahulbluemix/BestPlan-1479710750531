@@ -1,0 +1,11 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: BestPlan
+  host: BestPlanHost
+  disk_quota: 1024M
+  services:
+  - BestPlan-cloudantNoSQLDB
+  - availability-monitoring-auto
